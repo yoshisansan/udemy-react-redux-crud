@@ -18,12 +18,11 @@ renderEvents() {
       <td>{event.body}</td>
     </tr>
   ))
-
 }
 
 render() {
   const props = this.props
-
+  console.log(this.props.events);
     return (
     <React.Fragment>
       <table>
@@ -41,7 +40,7 @@ render() {
 
       </table>
 
-      <Link to="/events/new">New Event</Link>
+
     </React.Fragment>
    )
   }
